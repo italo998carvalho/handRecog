@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container d-flex justify-content-center" style="margin-top: 10%;">
+    <div class="col-md-12">
+        <h1 class="text-center">Envie a imagem de uma mão!</h1>
+        <div class="form">
+            <form action="/" method="POST" enctype="multipart/form-data" class="col-md-4 mx-auto">
+                <div class="form-group">
+                    <input type="file" name="img" accept="image/*" class="form-control-file"><br>
+
+                    <input type="submit" class="btn" value="Realizar predição">
+                </div>
+            </form>
+        </div>
+    </div>
+</div><br>
+{% endblock %}
